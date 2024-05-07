@@ -1,0 +1,566 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --primary-color: #faca22;
+    --secondary-color: #0A6847;
+    --green-color: #7bb92a;
+    --white-color: #FFFFFF;
+    --dark-blue-color: #02121C;
+    --footer-color: #02121B;
+    --text-color: #002B46;
+    --text-color-2: #6E8DA0;
+    --box-shadow: 0px 4px 50px 0px rgba(7, 68, 22, 0.084);
+    --box-shadow-2: 13px 14px 40px rgba(39, 98, 131, 0.15);
+}
+
+*,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "poppins", sans-serif;
+    letter-spacing: 0.25px;
+    color: #171717;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.1s ease-in;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: 500;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+
+ul,
+ol {
+    padding: 0;
+}
+
+/* Button styles */
+/* ===================================== */
+
+.btn1 {
+    border-radius: 5px;
+    padding: 0.45rem 1.25rem;
+    color: var(--white-color);
+    font-weight: 500;
+    background: var(--secondary-color);
+    outline: none;
+    text-decoration: none;
+    white-space: nowrap;
+    display: inline-block;
+    font-size: 14px;
+    min-width: 40px;
+    text-align: center;
+    border: 1px solid var(--secondary-color);
+    transition: all 0.2s ease-in-out;
+}
+
+.btn1:hover {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    border-color: var(--primary-color);
+}
+
+.icon-btn {
+    border-radius: 5px;
+    padding: 0.45rem 1.25rem;
+    color: var(--white-color);
+    font-weight: 500;
+    background: var(--secondary-color);
+    outline: none;
+    text-decoration: none;
+    white-space: nowrap;
+    display: inline-block;
+    font-size: 14px;
+    min-width: 40px;
+    text-align: center;
+    border: 1px solid var(--secondary-color);
+    transition: all 0.2s ease-in-out;
+}
+
+.icon-btn:hover {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.btn2 {
+    border-radius: 5px;
+    padding: 0.45rem 1.25rem;
+    color: var(--secondary-color);
+    font-weight: 500;
+    background: transparent;
+    outline: none;
+    text-decoration: none;
+    white-space: nowrap;
+    display: inline-block;
+    font-size: 14px;
+    min-width: 40px;
+    text-align: center;
+    border: 1px solid var(--secondary-color);
+    transition: all 0.2s ease-in-out;
+}
+
+.btn2:hover {
+    background: var(--secondary-color);
+    color: var(--white-color);
+}
+
+.btn3 {
+    border-radius: 5px;
+    padding: 0.45rem 1.25rem;
+    background: var(--secondary-color);
+    font-weight: 500;
+    color: var(--white-color);
+    outline: none;
+    text-decoration: none;
+    white-space: nowrap;
+    display: inline-block;
+    font-size: 14px;
+    min-width: 40px;
+    text-align: center;
+    border: 1px solid var(--secondary-color);
+    transition: all 0.2s ease-in-out;
+}
+
+.btn3:hover {
+    color: var(--secondary-color);
+    background: var(--white-color);
+
+}
+
+.title {
+    font-size: 32px;
+    font-weight: 600;
+    padding-bottom: 30px;
+    text-transform: capitalize;
+    position: relative;
+    padding-left: 2.75rem;
+}
+
+.title::before {
+    position: absolute;
+    content: "\f02d";
+    font-family: "Font Awesome 6 Free";
+    left: 0;
+    top: 0;
+    color: var(--secondary-color);
+}
+
+.title span {
+    color: var(--secondary-color);
+}
+
+/* Custom Css */
+/* Header section */
+header {
+    background-color: var(--secondary-color);
+    padding: 0.5rem 0;
+    color: var(--white-color);
+    font-size: 14px;
+}
+
+.call-num {
+    color: #faca22;
+    transition: all 0.2s ease-in-out;
+}
+
+.call-num:hover {
+    color: var(--white-color);
+}
+
+.social-box {
+    padding: 0.25rem 0.5rem;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    cursor: pointer;
+    color: var(--secondary-color);
+    transition: all 0.2s ease-in-out;
+}
+
+.social-box .fa-facebook-f {
+    padding: 1px 2px;
+}
+
+.social-box:hover {
+    background-color: var(--white-color);
+}
+
+/* Navbar section */
+nav {
+    background-color: #faca22;
+}
+
+.navbar-brand img {
+    width: 150px;
+}
+
+.navbar .nav-link {
+    font-weight: 600;
+    transition: all 0.2s ease-in-out;
+}
+
+.navbar .nav-link:hover {
+    color: var(--secondary-color);
+}
+
+/* navbar on scroll animation */
+.navbar.scroll-on {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background: #fff;
+    transition: all ease-in-out 0.2s;
+    box-shadow: 0 -2px 20px 5px #0000001f;
+    animation: fadeInDown 0.5s ease-in-out;
+}
+
+@keyframes fadeInDown {
+    0% {
+        top: -30%;
+    }
+
+    50% {
+        top: -15%;
+    }
+
+    100% {
+        top: 0;
+    }
+}
+
+/* Banner section */
+.banner-slider .slick-prev {
+    left: 20px !important;
+}
+
+.banner-slider .slick-next {
+    right: 20px !important;
+}
+
+.banner h1 span {
+    color: var(--secondary-color);
+}
+
+/* Service section */
+.service .inner-contain {
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: var(--box-shadow);
+}
+
+.service .inner-contain i,
+.service .inner-contain h4 {
+    color: var(--secondary-color);
+}
+
+/* Featured section */
+.inner-wrap {
+    position: relative;
+    overflow: hidden;
+    margin: 0 1rem;
+    border-radius: 10px;
+}
+
+.featured .info h4 {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.featured .info i {
+    font-size: 12px;
+    color: var(--primary-color);
+    margin: 0 2px 5px;
+}
+
+.layer-img .second {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.product-widget {
+    position: absolute;
+    z-index: 5;
+    left: 15%;
+    bottom: -25%;
+    transition: bottom 0.4s ease-in-out;
+}
+
+.product-widget a {
+    color: var(--secondary-color);
+}
+
+.product-widget i {
+    padding: 0.75rem;
+    background-color: rgb(255 255 255 / 70%);
+    border-radius: 50%;
+    margin: 0 0.25rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.product-widget i:hover {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+}
+
+.inner-wrap:hover .layer-img .second {
+    opacity: 1;
+}
+
+.inner-wrap:hover .product-widget {
+    bottom: 8%;
+}
+
+/* Category section */
+.category {
+    width: 100%;
+    background: url("../images/banner/cat-banner.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.category .romance {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.category .cat-img {
+    overflow: hidden;
+    transition: all 0.25s ease-in-out;
+}
+
+.category .cat-img img {
+    transition: all 0.25s ease-in-out;
+}
+
+.category .cat-img:hover img {
+    transform: scale(1.1);
+    filter: brightness(0.7);
+}
+
+/* Book of the day section */
+.book-day .inner-contain {
+    padding: 0.15rem;
+    padding-right: 1rem;
+    box-shadow: var(--box-shadow);
+    border-radius: 10px;
+    transition: all 0.25s ease-in-out;
+}
+
+.book-day .inner-contain img {
+    transition: all 0.25s ease-in-out;
+}
+
+.book-day .inner-contain:hover img {
+    filter: brightness(0.85);
+}
+
+.book-day ul {
+    list-style: none;
+}
+
+.book-day ul li {
+    padding-left: 1.5rem;
+    position: relative;
+    color: #484848;
+    font-size: 14px;
+}
+
+.book-day ul li::before {
+    content: "\f0a4";
+    font-family: "Font Awesome 6 Free";
+    position: absolute;
+    left: 0;
+    color: var(--secondary-color);
+}
+
+.book-day .bottom {
+    padding-top: 1rem;
+    border-top: 1px solid #e0e0e0;
+}
+
+.book-desc {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+/* Parallax effect section */
+
+
+.parallax-section {
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/banner/parallax.webp') no-repeat center;
+    color: var(--white-color);
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 4.5rem 0;
+
+}
+
+.parallax-section h2 {
+    color: var(--white-color);
+    font-size: 3rem;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+.parallax-section span {
+    color: var(--primary-color);
+}
+/* Recommendation section */
+.recom .card-title {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    color: var(--secondary-color);
+}
+.recom .card, .recom .card img, .recom .card .card-title {
+    transition: all 0.25s ease-in-out;
+}
+.recom .card:hover img {
+    transform: scale(1.1);
+}
+.recom .card:hover .card-title {
+    color: var(--dark-blue-color);
+}
+
+/* Review section */
+.review {
+    width: 100%;
+    background: url("../images/banner/cat-banner.jpg") no-repeat center;
+    background-size: cover;
+}
+.inner-review {
+    /* width: 98%; */
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: 1px solid #e2e2e2;
+    margin: 0 1rem 3rem;
+}
+
+
+.inner-review h4 {
+    color: var(--secondary-color);
+}
+
+.inner-review i {
+    font-size: 3.5rem;
+    color: var(--secondary-color);
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+}
+
+.author img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+
+/* Footer section */
+footer {
+    padding: 3rem 0 1rem;
+    background-color: #e5e5e5;
+} 
+footer ul {
+    list-style: none;
+}
+.logo {
+    font-family: var(--secondary-font);
+    font-size: 2rem;
+}
+.email {
+    position: relative;
+}
+.email-box {
+    border: none;
+    padding: 1rem;
+}
+.email-box:focus {
+    border: none;
+}
+.submit {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    background-color: #fff;
+    border: none;
+    border-radius: 0 10px 10px 0;
+    transition: all 0.25s ease-in-out;
+    padding: 1rem;
+}
+.submit:hover {
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+}
+.list-unstyled li a {
+    color: var(--dark-color);
+    font-weight: 500;
+}
+.link-widget li {
+    margin-bottom: 0.75rem;
+}
+.link-widget li a {
+    color: var(--dark-color);
+    transition: all 0.25s ease-in-out;
+}
+.link-widget li a:hover {
+    color: var(--secondary-color);
+}
